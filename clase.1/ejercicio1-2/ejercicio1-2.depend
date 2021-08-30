@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630274851 source:/home/linux/Escritorio/facultad/programacion/ejercicios/c/clase.1/ejercicio1-2/main.c
+	<stdio.h>
+	<stdlib.h>
+
