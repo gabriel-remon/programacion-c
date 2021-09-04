@@ -21,15 +21,13 @@ int main()
 
     precioViaje=600;
     viudoViejo = 0;
-    continual= 'y';
     edadPasajeroJoven=0;
     numeroCliente=0;
     contadorJoven=0;
     contadorViejo=0;
 
 
-    while(continual == 'y')
-    {
+    do{
         numeroCliente++;
 
         printf("Ingrese los datos del %dº cliente \n \n", numeroCliente);
@@ -92,7 +90,7 @@ int main()
         __fpurge(stdin);
         printf("Desea continuar? (y/n) ");
         scanf("%c", &continual);
-    }
+    }while(continual == 'y');
 
     precioFinal = precioViaje * numeroCliente;
 
@@ -100,10 +98,18 @@ int main()
     {
         printf("Hay %d personas que son viudos y tienen mas de 60 años \n", viudoViejo);
     }
+    else
+    {
+        printf("No se ingresaron personas viudas con mas de 60 años \n");
+    }
 
     if(edadPasajeroJoven!=0)
     {
         printf("La clienta mujer, numero %d con edad %d es la mas joven \n", numeroPasajeroJoven, edadPasajeroJoven);
+    }
+    else
+    {
+        printf("No se ingresaron mujeres \n");
     }
 
     if(contadorViejo>contadorJoven)
@@ -115,7 +121,7 @@ int main()
     }
     else
     {
-        printf("El valor del viaje es $ %.2f", precioFinal);
+        printf("El valor del viaje es $ %.2f \n", precioFinal);
     }
 
 }

@@ -18,6 +18,7 @@ e vacuna menos aplicada
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int main()
 {
@@ -46,6 +47,7 @@ int main()
     int contadorVacunarusa = 0;
     int contadorVacunachina = 0;
     int contadorVacunaAmericana;
+    int contadorMenorVacunada;
 
     do
     {
@@ -119,21 +121,21 @@ int main()
 
         switch(vacunaIngresada)
         {
-            case 'r':
-                contadorVacunarusa++;
-                sumaEdadRusa=sumaEdadRusa+edadIngresada;
+        case 'r':
+            contadorVacunarusa++;
+            sumaEdadRusa=sumaEdadRusa+edadIngresada;
             break;
 
-            case 'c':
-                contadorVacunachina++;
+        case 'c':
+            contadorVacunachina++;
             break;
 
-            case 'a':
-                contadorVacunaAmericana++;
-                if(edadIngresada>17)
-                {
-                    contadorAmericanaMajores++;
-                }
+        case 'a':
+            contadorVacunaAmericana++;
+            if(edadIngresada>17)
+            {
+                contadorAmericanaMajores++;
+            }
 
             break;
         }
@@ -144,7 +146,8 @@ int main()
         __fpurge(stdin);
         scanf("%c", &continuar);
 
-    }while(continuar == 'y');
+    }
+    while(continuar == 'y');
 
 
     if(contadorVacunarusa==0) //promedio edades rusa
@@ -179,20 +182,38 @@ int main()
     porcentajeVacunaSegunda= (float) (contadorVacunaSegunda/(contadorVacunaPrimera+contadorVacunaSegunda)) * 100;
     printf("El porcentaje de vaunas que tienen las dos dosis es %.2f \n", porcentajeVacunaSegunda);
 
-    if(contadorVacunarusa>contadorVacunaAmericana && contadorVacunarusa>contadorVacunachina) //vacuna mas inoculada
+    if(contadorVacunarusa<contadorVacunaAmericana && contadorVacunarusa<contadorVacunachina) //vacuna mas inoculada
     {
-        printf("La vacuna rusa es la mas aplicada");
+        contadorMenorVacunada= contadorVacunarusa;
     }
     else
     {
-        if(contadorVacunaAmericana>contadorVacunachina)
+        if(contadorVacunaAmericana<contadorVacunachina && contadorVacunaAmericana<contadorVacunarusa)
         {
-            printf("La vacuna americana es la mas aplicada");
+            contadorMenorVacunada= contadorVacunaAmericana;
         }
         else
         {
-            printf("La vacuna china es la mas aplicada");
+            contadorMenorVacunada= contadorVacunachina;
         }
     }
+
+    printf("La vauna menos inoculada es :\n");
+    if(contadorVacunaAmericana == contadorMenorVacunada)
+    {
+        printf(" Americana \n");
+    }
+
+    if(contadorVacunachina == contadorMenorVacunada)
+    {
+        printf(" china \n");
+    }
+
+    if(contadorVacunarusa == contadorMenorVacunada)
+    {
+        printf("rusa \n");
+    }
+
+    //getch();
 
 }
