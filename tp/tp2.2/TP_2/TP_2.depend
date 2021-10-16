@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1634347422 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/tp_laboratorio_1/TP_2/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"utn.h"
+
+1634347435 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/tp_laboratorio_1/TP_2/utn.h
+
+1634354305 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/tp_laboratorio_1/TP_2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"ArrayEmployees.h"
+
+1634356077 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/tp_laboratorio_1/TP_2/ArrayEmployees.h
+
+1634354817 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/tp_laboratorio_1/TP_2/ArrayEmployees.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"utn.h"
+	"ArrayEmployees.h"
+

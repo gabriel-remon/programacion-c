@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1631133627 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/clases/clase.5/ejercicio5-1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1631132181 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/clases/clase.5/ejercicio5-1/utn.h
+
+1631134057 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/clases/clase.5/ejercicio5-1/utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+

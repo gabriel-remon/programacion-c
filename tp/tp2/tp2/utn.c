@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include <string.h>
 #include "utn.h"
 
 int utn_minMaxInt(int* pResultado, char* pMensaje, char* pMensajeError, int minimo, int maximo)
@@ -397,3 +398,30 @@ int utn_swapChar(char* car1, char* car2)
     return retorno;
 }
 
+int utn_ingresoScring(char cadena[],char* pMensaje, char*pMensajeError, int tamPermitido)
+{
+    int retorno = -1;
+    char bufferIn[150];
+    int error;
+
+    if(cadena != NULL && pMensaje!= NULL && pMensajeError!= NULL)
+    {
+        do
+        {
+            printf("%s ", pMensaje);
+            __fpurge(stdin);
+            error = scanf("%s", bufferIn);
+            if(error == 1 && strlen(bufferIn)<=tamPermitido )
+            {
+                strcpy(cadena, bufferIn);
+                retorno = 0;
+                break;
+            }
+            else
+            {
+                printf("\n%s ", pMensajeError);
+            }
+        }while(1);
+    }
+    return retorno;
+}

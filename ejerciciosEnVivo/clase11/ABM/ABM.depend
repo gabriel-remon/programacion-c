@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1632786275 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/bibliotecas/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+
+1632785831 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/bibliotecas/utn.h
+
+1633400827 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/ejerciciosEnVivo/clase11/ABM/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../../bibliotecas/utn.h"
+	"alumno.h"
+	"ABM.h"
+
+1633392445 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/ejerciciosEnVivo/clase11/ABM/alumno.h
+
+1633400827 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/ejerciciosEnVivo/clase11/ABM/ABM.h
+

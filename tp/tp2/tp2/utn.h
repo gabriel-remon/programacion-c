@@ -24,5 +24,7 @@ int utn_swapInt(int* num1, int* num2);
 int utn_swapFloat(float* num1, float* num2);
 int utn_swapChar(char* car1, char* car2);
 
+int utn_ingresoScring(char cadena[],char* pMensaje, char* pMensajeError, int tamPermitido);
+
 
 #endif // UTN_H

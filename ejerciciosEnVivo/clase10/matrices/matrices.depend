@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1633133858 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/ejerciciosEnVivo/clase10/matrices/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1633133903 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/bibliotecas/utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1630985421 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/bibliotecas/utn.h
+

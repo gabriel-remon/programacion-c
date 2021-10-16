@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1631929419 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/tp/tp1.2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"tp1.h"
+
+1631848445 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/tp/tp1.2/utn.h
+
+1631848459 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/tp/tp1.2/utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1631929272 source:/home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/tp/tp1.2/tp1.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1632174827 /home/linux/Escritorio/facultad/programacion/primerCuatrimestre/programacion-c/tp/tp1.2/tp1.h
+
